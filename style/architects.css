@@ -9,6 +9,7 @@
 /* shared styles */
 .title {
     font-size: 2.75rem;
+    margin-bottom: 24px;
 }
 .dark-1 {
     color: #131313;
@@ -152,15 +153,34 @@ header {
     /* border: 2px solid gray; */
     margin: 0;
 }
+
+/* sponsors related styles */
+.sponsors {
+    text-align: center;
+}
+.sponsors-content {
+    margin: 50px auto;
+}
+.sponsors-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 50px;
+    justify-content: space-between;
+    justify-items: center;
+}
+.sponsors-container img {
+    filter: grayscale(100%);
+    transition: filter 0.5s ease;
+}
+.sponsors-container img:hover {
+    filter: grayscale(0%);
+}
+
+
 /* responsive styles */
 @media screen and (max-width: 576px) {
     .button {
-    /* background-color: rgba(255, 144, 14, 1);
-    border-radius: 8px;
-    color: rgba(255, 255, 255, 1);
-    font-weight: 600; */
     font-size: 1rem;
-    /* border: none; */
     padding: 16px 20px;
     margin: 24px 0;
 }
@@ -199,6 +219,10 @@ main section {
     grid-template-columns: repeat(1, 1fr);
     margin: 50px auto;
 }
+
+.sponsors-container {
+    grid-template-columns: repeat(1, 1fr);
+}
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -217,5 +241,9 @@ main section {
 .facts-cards {
     grid-template-columns: repeat(2, 1fr);
     margin: 75px auto;
+}
+
+.sponsors-container {
+    grid-template-columns: repeat(2, 1fr);
 }
 }
