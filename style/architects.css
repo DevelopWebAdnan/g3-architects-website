@@ -176,6 +176,57 @@ header {
     filter: grayscale(0%);
 }
 
+/* features-love section */
+.features-love-cards-container {
+    margin-top: 30px;
+}
+.features-love {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+.features-love-content .title {
+    border-left: 5px solid rgba(255, 144, 14, 1);
+    padding-left: 20px;
+}
+.features-love-card {
+    padding: 30px;
+    /* box-shadow: rgba(0, 0, 0, 0.06); */
+    /* box-shadow: 0 0 0 rgb(0, 0, 0); */
+    box-shadow: 0 0 0 0.06px;
+    margin: 20px auto;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 1);
+}
+.features-love-card h4{
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 10px auto;
+}
+.features-love-experience img {
+    border-radius: 8px;
+    width: 700px;
+    height: 980px;
+}
+.features-love-experience-card {
+    background-color: rgba(255, 144, 14, 1);
+    color: rgba(255, 255, 255, 1);
+    border-radius: 8px;
+    max-width: 342px;
+    text-align: center;
+      padding: 45px 40px;
+      position: relative;
+      top: -75px;
+      left: -90px;
+}
+.features-love-experience-card h4 {
+    font-size: 4rem;
+    margin: 0;
+}
+.features-love-experience-card p {
+    font-size: 1.5rem;
+    margin: 0;
+}
 
 /* responsive styles */
 @media screen and (max-width: 576px) {
@@ -223,6 +274,28 @@ main section {
 .sponsors-container {
     grid-template-columns: repeat(1, 1fr);
 }
+
+.features-love {
+    flex-direction: column;
+}
+.features-love-experience img {
+    /* border-radius: 8px; */
+    /* width: 700px;
+    height: 980px; */
+    width: 100%;
+    height: auto;
+}
+.features-love-experience-card {
+      position: static;
+}
+.features-love-experience-card h4 {
+    font-size: 3rem;
+    /* margin: 0; */
+}
+.features-love-experience-card p {
+    font-size: 1rem;
+    /* margin: 0; */
+}
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -245,5 +318,12 @@ main section {
 
 .sponsors-container {
     grid-template-columns: repeat(2, 1fr);
+}
+
+.features-love {
+    flex-direction: column;
+}
+.features-love-experience-card {
+      position: static;
 }
 }
