@@ -183,7 +183,7 @@ header {
 .features-love {
     display: flex;
     justify-content: space-between;
-    gap: 50px;
+    gap: 140px;
 }
 .features-love-content .title {
     border-left: 5px solid rgba(255, 144, 14, 1);
@@ -191,9 +191,8 @@ header {
 }
 .features-love-card {
     padding: 30px;
-    /* box-shadow: rgba(0, 0, 0, 0.06); */
-    /* box-shadow: 0 0 0 rgb(0, 0, 0); */
-    box-shadow: 0 0 0 0.06px;
+    /* box-shadow: rgba(0, 0, 0, 0.06) 0 4px 24px; */
+    box-shadow:  0 4px 24px rgba(0, 0, 0, 0.06);
     margin: 20px auto;
     border-radius: 8px;
     background-color: rgba(255, 255, 255, 1);
@@ -277,6 +276,7 @@ main section {
 
 .features-love {
     flex-direction: column;
+    /* gap: 140px; */
 }
 .features-love-experience img {
     /* border-radius: 8px; */
@@ -322,6 +322,7 @@ main section {
 
 .features-love {
     flex-direction: column;
+    /* gap: 140px; */
 }
 .features-love-experience-card {
       position: static;
