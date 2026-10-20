@@ -110,50 +110,46 @@ header {
 }
 
 /* facts related styles */
+/* .facts {
+    margin: 100px auto;
+} */
 .facts-references {
     list-style: none;
 }
 .facts-cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    /* justify-content: center;
-    align-items: center; */
-    /* text-align: center; */
     margin: 100px auto;
+    /* border: 2px solid green; */
+    justify-items: center;
+    gap: 24px;
 }
 .facts-card {
     border: 1px solid rgba(255, 144, 14, 1);
     border-radius: 8px;
     width: 240px;
     height: 240px;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    text-align: center;
-    /* padding: 45px 0 60px 0; */
-}
-.facts-card-content{
-    height: 140px;
-    border: 2px solid rebeccapurple;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    text-align: center;
 }
-.facts-card-content img {
+
+.facts-card img {
     width: 45px;
     height: 45px;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
-.facts-card-content .title {
+.facts-card .title {
     font-weight: 600;
-    border: 2px solid darkblue;
-    margin: 0;
+    /* border: 2px solid darkblue; */
+    margin: 10px;
 }
-.facts-card-content .subtitle {
+.facts-card .subtitle {
     font-weight: 600;
     font-size: 1.25rem;
-    border: 2px solid gray;
+    /* border: 2px solid gray; */
     margin: 0;
 }
 /* responsive styles */
@@ -168,6 +164,11 @@ header {
     padding: 16px 20px;
     margin: 24px 0;
 }
+
+main section {
+    margin: 70px 20px;
+}
+
  .navbar {
     flex-direction: column;
 }
@@ -193,14 +194,28 @@ header {
 .features-gallery {
     grid-template-columns: repeat(1, 1fr);
 }
+
+.facts-cards {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 50px auto;
+}
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
+    main section {
+    margin: 100px 20px;
+}
+
     .navbar {
     flex-direction: column;
 }
 
 .features {
    flex-direction: column;
+}
+
+.facts-cards {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 75px auto;
 }
 }
